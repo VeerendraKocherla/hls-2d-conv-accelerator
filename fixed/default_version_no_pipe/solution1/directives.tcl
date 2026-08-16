@@ -1,0 +1,10 @@
+############################################################
+## This file is generated automatically by Vitis HLS.
+## Please DO NOT edit it.
+## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+############################################################
+set_directive_array_partition -type complete -dim 0 "conv2d" kernel_in
+set_directive_top -name conv2d "conv2d"
+set_directive_loop_tripcount -min 66 -max 130 "conv2d/ROW_SLIDE"
+set_directive_loop_tripcount -min 66 -max 130 "conv2d/COL_SLIDE"
+set_directive_pipeline -off "conv2d"

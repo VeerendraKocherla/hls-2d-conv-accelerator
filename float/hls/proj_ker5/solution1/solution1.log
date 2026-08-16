@@ -1,0 +1,1098 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 12.957 seconds; current allocated memory: 115.784 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1007.024 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.287 seconds; current allocated memory: 117.262 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.128 seconds; current allocated memory: 118.949 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 118.950 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 125.728 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 134.125 MB.
+INFO: [XFORM 203-510] Pipelining loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.426 seconds; current allocated memory: 164.792 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 162.892 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_1', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_2', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_3', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_18', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_22', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 23). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_23', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 24). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 25, Depth = 135, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.389 seconds; current allocated memory: 164.157 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.851 seconds; current allocated memory: 165.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'img_size', 'kernel_in' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.658 seconds; current allocated memory: 169.152 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.104 seconds; current allocated memory: 176.353 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.589 seconds; current allocated memory: 181.285 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 110.52 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 0 seconds. Elapsed time: 18.097 seconds; current allocated memory: 181.271 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.52 seconds; peak allocated memory: 1007.024 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 15 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1007.040 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.554 seconds; current allocated memory: 117.171 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.646 seconds; current allocated memory: 118.950 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 118.950 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 125.728 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 134.126 MB.
+INFO: [XFORM 203-510] Pipelining loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.528 seconds; current allocated memory: 164.793 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 162.893 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_1', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_2', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_3', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_18', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_22', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 23). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+WARNING: [HLS 200-885] The II Violation in module 'conv2d' (loop 'ROW_SLIDE_COL_SLIDE'): Unable to schedule 'load' operation ('kernel_in_load_23', twodconv.cpp:82) on array 'kernel_in' due to limited memory ports (II = 24). Please consider using a memory core with more ports or partitioning the array 'kernel_in'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 25, Depth = 105, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.374 seconds; current allocated memory: 164.092 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.852 seconds; current allocated memory: 165.533 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'img_size', 'kernel_in' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.566 seconds; current allocated memory: 168.658 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.091 seconds; current allocated memory: 175.691 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.689 seconds; current allocated memory: 180.622 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 74.59 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 18.189 seconds; current allocated memory: 180.608 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 19.494 seconds; peak allocated memory: 1007.040 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 15 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -dim 0 -type complete conv2d kernel_in 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 1007.026 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.231 seconds; current allocated memory: 117.249 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-248] Applying array_partition to 'kernel_in': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.623 seconds; current allocated memory: 119.638 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 119.639 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 126.789 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 134.993 MB.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_4' as it is incompatible with its interface mode 's_axilite'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.91 seconds; current allocated memory: 165.784 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.177 seconds; current allocated memory: 164.305 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 110, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.7 seconds; current allocated memory: 165.612 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.798 seconds; current allocated memory: 167.546 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'kernel_in_0_0', 'kernel_in_0_1', 'kernel_in_0_2', 'kernel_in_0_3', 'kernel_in_0_4', 'kernel_in_1_0', 'kernel_in_1_1', 'kernel_in_1_2', 'kernel_in_1_3', 'kernel_in_1_4', 'kernel_in_2_0', 'kernel_in_2_1', 'kernel_in_2_2', 'kernel_in_2_3', 'kernel_in_2_4', 'kernel_in_3_0', 'kernel_in_3_1', 'kernel_in_3_2', 'kernel_in_3_3', 'kernel_in_3_4', 'kernel_in_4_0', 'kernel_in_4_1', 'kernel_in_4_2', 'kernel_in_4_3', 'kernel_in_4_4', 'img_size' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d' is 16295 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 35 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.216 seconds; current allocated memory: 173.408 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_3_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.06 seconds; current allocated memory: 181.294 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.365 seconds; current allocated memory: 186.995 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 80.76 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 18.541 seconds; current allocated memory: 186.981 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.685 seconds; peak allocated memory: 1007.026 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -dim 0 -type complete conv2d kernel_in 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 1007.042 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.563 seconds; current allocated memory: 117.296 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-248] Applying array_partition to 'kernel_in': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.754 seconds; current allocated memory: 119.638 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 119.638 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 126.788 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 134.993 MB.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_4' as it is incompatible with its interface mode 's_axilite'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.938 seconds; current allocated memory: 165.784 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 164.304 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 141, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.794 seconds; current allocated memory: 165.724 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.98 seconds; current allocated memory: 167.976 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'kernel_in_0_0', 'kernel_in_0_1', 'kernel_in_0_2', 'kernel_in_0_3', 'kernel_in_0_4', 'kernel_in_1_0', 'kernel_in_1_1', 'kernel_in_1_2', 'kernel_in_1_3', 'kernel_in_1_4', 'kernel_in_2_0', 'kernel_in_2_1', 'kernel_in_2_2', 'kernel_in_2_3', 'kernel_in_2_4', 'kernel_in_3_0', 'kernel_in_3_1', 'kernel_in_3_2', 'kernel_in_3_3', 'kernel_in_3_4', 'kernel_in_4_0', 'kernel_in_4_1', 'kernel_in_4_2', 'kernel_in_4_3', 'kernel_in_4_4', 'img_size' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d' is 22139 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 35 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.292 seconds; current allocated memory: 174.853 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.12 seconds; current allocated memory: 182.927 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.344 seconds; current allocated memory: 188.628 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10 seconds. CPU system time: 1 seconds. Elapsed time: 19.399 seconds; current allocated memory: 188.614 MB.
+INFO: [HLS 200-112] Total CPU user time: 11 seconds. Total CPU system time: 2 seconds. Total elapsed time: 20.779 seconds; peak allocated memory: 1007.042 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 conv2d kernel_in 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.835 seconds; current allocated memory: 1007.230 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 conv2d kernel_in 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 1007.043 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.941 seconds; current allocated memory: 117.281 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-248] Applying array_partition to 'kernel_in': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.149 seconds; current allocated memory: 119.654 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 119.655 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 126.805 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 135.009 MB.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_4' as it is incompatible with its interface mode 's_axilite'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.051 seconds; current allocated memory: 165.801 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.238 seconds; current allocated memory: 164.321 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 141, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.927 seconds; current allocated memory: 165.741 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.993 seconds; current allocated memory: 167.993 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'kernel_in_0_0', 'kernel_in_0_1', 'kernel_in_0_2', 'kernel_in_0_3', 'kernel_in_0_4', 'kernel_in_1_0', 'kernel_in_1_1', 'kernel_in_1_2', 'kernel_in_1_3', 'kernel_in_1_4', 'kernel_in_2_0', 'kernel_in_2_1', 'kernel_in_2_2', 'kernel_in_2_3', 'kernel_in_2_4', 'kernel_in_3_0', 'kernel_in_3_1', 'kernel_in_3_2', 'kernel_in_3_3', 'kernel_in_3_4', 'kernel_in_4_0', 'kernel_in_4_1', 'kernel_in_4_2', 'kernel_in_4_3', 'kernel_in_4_4', 'img_size' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d' is 22139 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 35 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.511 seconds; current allocated memory: 174.870 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.308 seconds; current allocated memory: 182.929 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.621 seconds; current allocated memory: 188.614 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10 seconds. CPU system time: 1 seconds. Elapsed time: 21.346 seconds; current allocated memory: 188.600 MB.
+INFO: [HLS 200-112] Total CPU user time: 11 seconds. Total CPU system time: 2 seconds. Total elapsed time: 22.768 seconds; peak allocated memory: 1007.043 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 conv2d kernel_in 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 26.422 seconds; current allocated memory: 123.495 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 conv2d kernel_in 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 1007.153 MB.
+INFO: [HLS 200-10] Analyzing design file 'twodconv.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: twodconv.cpp:25:9
+WARNING: [HLS 207-5301] unused parameter 'print': D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.499 seconds; current allocated memory: 117.362 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::operator long long() const' into 'unpack(ap_int<32>)' (twodconv.cpp:6:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' (D:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::read()' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:57:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<32>, 1ul, 1ul, 1ul> const&)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:93:28)
+INFO: [HLS 214-178] Inlining function 'unpack(ap_int<32>)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'pack(float)' into 'conv2d(hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 1ul, 1ul, 1ul>, 0>&, float (*) [5], int)' (twodconv.cpp:20:0)
+INFO: [HLS 214-248] Applying array_partition to 'kernel_in': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (twodconv.cpp:20:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.814 seconds; current allocated memory: 119.779 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 119.780 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 126.930 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 135.134 MB.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_0_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_1_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_2_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_3_4' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_0' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_1' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_2' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_3' as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'kernel_in_4_4' as it is incompatible with its interface mode 's_axilite'.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COL_SLIDE' (twodconv.cpp:43) in function 'conv2d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_ROW' (twodconv.cpp:46) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_WINDOW_COL' (twodconv.cpp:48) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'UPDATE_BUF' (twodconv.cpp:61) in function 'conv2d' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'MACi' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'MACj' (twodconv.cpp:37) in function 'conv2d' completely with a factor of 5.
+INFO: [XFORM 203-101] Partitioning array 'line_buf'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window'  in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv2d' (twodconv.cpp:7:47)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.004 seconds; current allocated memory: 165.941 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'ROW_SLIDE' (twodconv.cpp:41:14) in function 'conv2d'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buf.0' (twodconv.cpp:66:38)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 164.418 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ROW_SLIDE_COL_SLIDE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 141, loop 'ROW_SLIDE_COL_SLIDE'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.864 seconds; current allocated memory: 165.853 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.041 seconds; current allocated memory: 168.104 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/in_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/out_stream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_0_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_1_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_2_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_3_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/kernel_in_4_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d/img_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'window_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_1_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_2_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_3_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'window_4_4' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'kernel_in_0_0', 'kernel_in_0_1', 'kernel_in_0_2', 'kernel_in_0_3', 'kernel_in_0_4', 'kernel_in_1_0', 'kernel_in_1_1', 'kernel_in_1_2', 'kernel_in_1_3', 'kernel_in_1_4', 'kernel_in_2_0', 'kernel_in_2_1', 'kernel_in_2_2', 'kernel_in_2_3', 'kernel_in_2_4', 'kernel_in_3_0', 'kernel_in_3_1', 'kernel_in_3_2', 'kernel_in_3_3', 'kernel_in_3_4', 'kernel_in_4_0', 'kernel_in_4_1', 'kernel_in_4_2', 'kernel_in_4_3', 'kernel_in_4_4', 'img_size' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d' is 22139 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 35 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.512 seconds; current allocated memory: 175.011 MB.
+INFO: [RTMG 210-278] Implementing memory 'conv2d_line_buf_0_ram (RAM_2P_BRAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.263 seconds; current allocated memory: 183.039 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.38 seconds; current allocated memory: 188.878 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.51 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9 seconds. CPU system time: 1 seconds. Elapsed time: 20.065 seconds; current allocated memory: 188.864 MB.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.36 seconds; peak allocated memory: 1007.153 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 1.25 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv2d conv2d 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 1 conv2d/COL_SLIDE 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 conv2d kernel_in 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file proj_float5/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 17.987 seconds; current allocated memory: 123.609 MB.

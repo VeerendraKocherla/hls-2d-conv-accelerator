@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat May  1 16:11:25 2021
+# Process ID: 12980
+# Current directory: D:/IITMadrasICS/1-2/EE5332Project/float/proj_float5/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/IITMadrasICS/1-2/EE5332Project/float/proj_float5/solution1/impl/ip/vivado.log
+# Journal file: D:/IITMadrasICS/1-2/EE5332Project/float/proj_float5/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

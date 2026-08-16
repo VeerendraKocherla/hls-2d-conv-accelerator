@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="conv2d" xd:componentRef="conv2d" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in_stream" xd:originalName="in_stream" xd:direction="in" xd:interfaceRef="in_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="out_stream" xd:originalName="out_stream" xd:direction="out" xd:interfaceRef="out_stream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(s_axi_control)" xd:originalName="kernel_in" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32"/>
+  <xd:arg xd:name="img_size" xd:originalName="img_size" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xD8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="25382" xd:FF="18366" xd:BRAM="0" xd:DSP="148"/>
+</xd:acceleratorMap>

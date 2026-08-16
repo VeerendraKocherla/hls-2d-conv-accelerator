@@ -1,0 +1,107 @@
+
+
+================================================================
+== Synthesis Summary Report of 'conv2d'
+================================================================
++ General Information: 
+    * Date:           Sat May  1 16:11:07 2021
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+    * Project:        proj_float5
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+--------+-----------+-------------+-------------+-----+
+    |         Modules        | Issue|      | Latency | Latency| Iteration|         | Trip |          |        |           |             |             |     |
+    |         & Loops        | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  |    DSP    |      FF     |     LUT     | URAM|
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+--------+-----------+-------------+-------------+-----+
+    |+ conv2d                |     -|  0.24|        -|       -|         -|        -|     -|        no|  4 (1%)|  148 (67%)|  18366 (17%)|  25382 (47%)|    -|
+    | o ROW_SLIDE_COL_SLIDE  |     -|  8.75|        -|       -|       141|        1|     -|       yes|       -|          -|            -|            -|    -|
+    +------------------------+------+------+---------+--------+----------+---------+------+----------+--------+-----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* AXIS
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_stream  | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| out_stream | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+--------------------------------------------+
+| Argument   | Direction | Datatype                                   |
++------------+-----------+--------------------------------------------+
+| in_stream  | in        | stream<hls::axis<ap_int<32>, 1, 1, 1>, 0>& |
+| out_stream | out       | stream<hls::axis<ap_int<32>, 1, 1, 1>, 0>& |
+| kernel_in  | in        | float*                                     |
+| img_size   | in        | int                                        |
++------------+-----------+--------------------------------------------+
+
+* SW-to-HW Mapping
++------------+------------------------+-----------+-----------------------+
+| Argument   | HW Name                | HW Type   | HW Info               |
++------------+------------------------+-----------+-----------------------+
+| in_stream  | in_stream              | interface |                       |
+| out_stream | out_stream             | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| kernel_in  | s_axi_control          | interface |                       |
+| img_size   | s_axi_control img_size | register  | offset=0xd8, range=32 |
++------------+------------------------+-----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+
